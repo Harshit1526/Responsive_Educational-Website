@@ -1,3 +1,6 @@
+WEBSITE LINK:-
+https://eduford-reponsive.netlify.app/
+
 # Educational Website Project
 
 This project is an educational website built using HTML, CSS, and JavaScript. It consists of several pages including Home, Course, Blog, Contact, and About Us. The website is designed to be responsive, ensuring optimal viewing experience across various devices including laptops and phones.
