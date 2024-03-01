@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9fcb489fba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"> <img src="./images/logo.png" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li> <a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li> <a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <h1>About Us</h1>
+  </section>
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest university</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est, ut tempore eaque quia minus unde, dolorem
+          deleniti fugit accusamus soluta possimus dolorum. Totam asperiores molestias sequi! Inventore, voluptas
+          labore.</p>
+          <a href="" class="hero-btn-red-btn">EXPLORE NOW</a>
+      </div>
+      <div class="about-col">
+        <img src="./images//about.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti in autem asperiores illum dicta iusto
+      alias voluptas,<br> quaerat architecto ducimus porro ratione soluta sapiente! Error sit eius ducimus adipisci?</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Harshit Sharma</p>
+  </section>
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    document.querySelector(".fa-bars").addEventListener("click", showMenu);
+    document.querySelector(".fa-xmark").addEventListener("click", hideMenu);
+
+
+
+  </script>
+
+</body>
+
+</html>

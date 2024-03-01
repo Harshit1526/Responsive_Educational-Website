@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9fcb489fba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"> <img src="./images/logo.png" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li> <a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li> <a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <h1>Our Certificate & Online Progrsm for 2024</h1>
+  </section>
+  <!-- Blog sectiob -->
+
+  <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="./images/certificate.jpg" alt="">
+        <h2>Our Certificate & Online Progrsm for 2024</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores suscipit molestiae iste quo id tempora
+          placeat soluta? Perspiciatis accusamus facilis.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officia quos libero enim mollitia minus
+          quaerat, ab perferendis magni voluptatem iure maiores optio nobis. Molestiae laboriosam ipsam quos aut
+          repellat.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, cumque aliquid itaque nesciunt totam, incidunt
+          architecto natus voluptatibus facere tempora magni deleniti exercitationem vel soluta, non rerum eius corporis
+          vero!</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt, voluptatum beatae illum
+          earum in architecto sapiente labore dolores culpa provident reprehenderit! Excepturi dolorem molestiae vitae
+          ipsam obcaecati ratione beatae?</p>
+
+
+        <div class="comment-box">
+          <h3>Leave a Comment</h3>
+          <form class="comment-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="94be86b2-26f2-404e-8c78-dd2f6c1f053e">
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="email"  type="email" placeholder="Enter Email">
+            <textarea rows="5" name="message" placeholder="Your Comment"></textarea>
+            <button type="Submit" class="hero-btn-red">POST COMMENT</button>
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+      <div class="blog-right">
+        <h3>Post Categories</h3>
+        <div>
+          <span>Business Analytics</span>
+          <span>21</span>
+        </div>
+        <div>
+          <span>omputer Science</span>
+          <span>28</span>
+        </div>
+        <div>
+          <span>Artiifcial Intellegence</span>
+          <span>22</span>
+        </div>
+        <div>
+          <span>Journalism</span>
+          <span>30</span>
+        </div>
+        <div>
+          <span>Cyber Security</span>
+          <span>25</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores deleniti in autem asperiores illum dicta
+      iusto
+      alias voluptas,<br> quaerat architecto ducimus porro ratione soluta sapiente! Error sit eius ducimus adipisci?
+    </p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Harshit Sharma</p>
+  </section>
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    document.querySelector(".fa-bars").addEventListener("click", showMenu);
+    document.querySelector(".fa-xmark").addEventListener("click", hideMenu);
+
+
+
+  </script>
+
+</body>
+
+</html>
